@@ -1,0 +1,27 @@
+{
+    "name": "TheGraceCompany/ups",
+    "description": "A simple tool to return UPS shipping rates.",
+    "keywords": [
+        "laravel",
+        "ups",
+        "shipping"
+    ],
+    "homepage": "https://github.com/TheGraceCompany/ups",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grace",
+            "email": "info@graceframe.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TheGraceCompany\\Ups\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
