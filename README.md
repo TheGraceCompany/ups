@@ -6,7 +6,7 @@ This package is used to send shipment rate quote requests to the UPS webservice.
 Install using Composer, edit your ```composer.json``` file to include:
 ```
 "require": {
-	"TheGraceCompany/ups": "1.*"
+	"thegracecompany/ups": "1.*"
 }
 ```
 Update composer from the command line:
@@ -15,11 +15,11 @@ composer update
 ```
 Add a new Service Provider to the ```providers``` array in your ```app/config/app.php``` file:
 ```
-'Beaudierman\Ups\UpsServiceProvider'
+TheGraceCompany\Ups\UpsServiceProvider::class,
 ```
 Add a class alias in the same configuration file to the ```aliases``` array:
 ```
-'Ups'             => 'TheGraceCompany\Ups\Facades\Ups'
+'Ups'             => TheGraceCompany\Ups\Facades\Ups::class,
 ```
 Example:
 ```
